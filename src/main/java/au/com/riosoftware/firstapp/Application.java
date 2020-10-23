@@ -20,7 +20,7 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         for (int i = 0; i < 5; i++) {
-            repository.save(new Post("Dieters post number #" + (i+1)));
+            repository.save(new Post("Posts in the cloud, number = " + (i+1)));
         }
     }
 }
